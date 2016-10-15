@@ -1,0 +1,13 @@
+export const readFileBuffer = promisify(fs.readFile);
+export const writeFile: (path: string, data: string) => Promise<void> = promisify(fs.writeFile);
+export const readlink: (path: string, opts: void) => Promise<string> = promisify(fs.readlink);
+export const realpath: (path: string, opts: void) => Promise<string> = promisify(fs.realpath);
+export const readdir: (path: string, opts: void) => Promise<Array<string>> = promisify(fs.readdir);
+export const rename: (oldPath: string, newPath: string) => Promise<void> = promisify(fs.rename);
+export const access: (path: string, mode?: number) => Promise<void> = promisify(fs.access);
+export const stat: (path: string) => Promise<fs.Stats> = promisify(fs.stat);
+export const unlink: (path: string) => Promise<void> = promisify(require('rimraf'));
+export const mkdirp: (path: string) => Promise<void> = promisify(require('mkdirp'));
+export const exists: (path: string) => Promise<boolean>  = promisify(fs.exists, true);
+export const lstat: (path: string) => Promise<fs.Stats> = promisify(fs.lstat);
+export const chmod: (path: string, mode: number | string) => Promise<void> = promisify(fs.chmod);
