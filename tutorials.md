@@ -1,2 +1,3 @@
 - [w3schools](http://www.w3schools.com/)
 - [javascript data structures and data types](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Data_structures)
+- [codecademy](https://www.codecademy.com/learn/php)
