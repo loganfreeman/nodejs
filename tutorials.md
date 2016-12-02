@@ -3,3 +3,4 @@
 - [codecademy js](https://www.codecademy.com/learn/javascript)
 - [sololearn](https://www.sololearn.com/Play/PHP#)
 - [free code camp](https://www.freecodecamp.com/)
+- [maths](https://alison.com/learn/maths)
