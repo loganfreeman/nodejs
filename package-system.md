@@ -7,3 +7,4 @@ All
 Webpack
 ---
 - [webpack-howto](https://github.com/petehunt/webpack-howto)
+- [webpack cookbook](http://survivejs.com/webpack/developing-with-webpack/getting-started/)
