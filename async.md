@@ -1,0 +1,2 @@
+- [tapable](https://github.com/webpack/tapable)
+- [async](https://github.com/caolan/async)
