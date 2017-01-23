@@ -1,1 +1,2 @@
 - [Wrapper library for directory and file watching.](https://github.com/webpack/watchpack)
+- [chokidar](https://github.com/paulmillr/chokidar)
