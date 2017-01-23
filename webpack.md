@@ -1,3 +1,8 @@
+Plugins
+---
+- [how to write a plugin](https://github.com/webpack/docs/wiki/how-to-write-a-plugin)
+- [list of plugins](https://github.com/webpack/docs/wiki/list-of-plugins)
+
 compile
 ---
 ```js
