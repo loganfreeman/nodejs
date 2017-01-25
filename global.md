@@ -36,3 +36,37 @@ try {
 
 module.exports = g;
 ```
+
+strict mode
+---
+strict mode makes it impossible to accidentally create global variables.
+Assignments which would accidentally create global variables instead throw in strict mode:
+```js
+"use strict";
+                       // Assuming a global variable mistypedVariable exists
+mistypedVariable = 17; // this line throws a ReferenceError due to the 
+                       // misspelling of variable
+```
+Any assignment that silently fails in normal code (assignment to a non-writable property, assignment to a getter-only property, assignment to a new property on a non-extensible object) will throw in strict mode:
+```js
+"use strict";
+
+// Assignment to a non-writable property
+var obj1 = {};
+Object.defineProperty(obj1, "x", { value: 42, writable: false });
+obj1.x = 9; // throws a TypeError
+
+// Assignment to a getter-only property
+var obj2 = { get x() { return 17; } };
+obj2.x = 5; // throws a TypeError
+
+// Assignment to a new property on a non-extensible object
+var fixed = {};
+Object.preventExtensions(fixed);
+fixed.newProp = "ohai"; // throws a TypeError
+```
+Third, strict mode makes attempts to delete undeletable properties throw (where before the attempt would simply have no effect):
+```js
+"use strict";
+delete Object.prototype; // throws a TypeError
+```
