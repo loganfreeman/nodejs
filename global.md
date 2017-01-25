@@ -39,6 +39,20 @@ module.exports = g;
 
 strict mode
 ---
+For a normal function, this is always an object: either the provided object if called with an object-valued this; the value, boxed, if called with a Boolean, string, or number; or the global object if called with an undefined or null.
+
+Not only is automatic boxing a performance cost, but exposing the global object in browsers is a security hazard, because the global object provides access to functionality that "secure" JavaScript environments must restrict. Thus for a strict mode function, the specified this is not boxed into an object, and if unspecified, this will be undefined:
+
+```js
+"use strict";
+function fun() { return this; }
+console.assert(fun() === undefined);
+console.assert(fun.call(2) === 2);
+console.assert(fun.apply(null) === null);
+console.assert(fun.call(undefined) === undefined);
+console.assert(fun.bind(true)() === true);
+```
+
 strict mode makes it impossible to accidentally create global variables.
 Assignments which would accidentally create global variables instead throw in strict mode:
 ```js
