@@ -1,0 +1,1 @@
+- [js-interpret: A dictionary of file extensions and associated module loaders](https://github.com/js-cli/js-interpret)
