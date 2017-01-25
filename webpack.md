@@ -34,3 +34,20 @@ Compiler.prototype.compile = function(callback) {
 	});
 };
 ```
+Parser
+---
+```js
+Parser.prototype.evaluate = function evaluate(source) {
+	var ast = acorn.parse("(" + source + ")", {
+		ranges: true,
+		locations: true,
+		ecmaVersion: 6,
+		sourceType: "module"
+	});
+	if(!ast || typeof ast !== "object" || ast.type !== "Program")
+		throw new Error("evaluate: Source couldn't be parsed");
+	if(ast.body.length !== 1 || ast.body[0].type !== "ExpressionStatement")
+		throw new Error("evaluate: Source is not a expression");
+	return this.evaluateExpression(ast.body[0].expression);
+};
+```
