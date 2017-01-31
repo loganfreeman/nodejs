@@ -1,1 +1,2 @@
 - [The curious trouble of extending Immutable.js](https://medium.com/phils-thought-bubble-of-recent-stuff/how-to-extend-immutable-js-1e980b4e0d4d#.l5mmw4ezk)
+- [Wrapper classes around Immutable.js that turn it inheritable](https://github.com/philpl/extendable-immutable)
