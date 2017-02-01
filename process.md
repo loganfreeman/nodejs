@@ -17,3 +17,7 @@ Note:Even though the name of this function is process.kill(), it is really just 
 This method will throw an error if the target pid does not exist. As a special case, a signal of 0 can be used to test for the existence of a process. 
 
 
+process.stdin
+---
+The `process.stdin` property returns a Readable stream equivalent to or associated with `stdin` (fd 0).
+
