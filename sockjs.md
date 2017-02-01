@@ -1,3 +1,18 @@
+net.connect(options[, connectListener])
+---
+A factory function, which returns a new `net.Socket` and automatically connects with the supplied options.
+
+The options are passed to both the `net.Socket` constructor and the `socket.connect` method.
+
+The connectListener parameter will be added as a listener for the 'connect' event once.
+```js
+function connectToDaemon(socket_path, cbs){
+  var socket = net.connect(socket_path, cbs.ready);
+  json_socket.listen(socket, cbs.event);
+  return socket;
+}
+```
+
 webpack-dev-server
 ---
 ```js
