@@ -21,3 +21,17 @@ process.stdin
 ---
 The `process.stdin` property returns a Readable stream equivalent to or associated with `stdin` (fd 0).
 
+child_process.spawn(command[, args][, options])#
+---
+The `child_process.spawn()` method spawns a new process using the given command, with command line arguments in args. If omitted, args defaults to an empty array.
+
+A third argument may be used to specify additional options, with these defaults:
+```
+{
+  cwd: undefined,
+  env: process.env
+}
+```
+Use `cwd` to specify the working directory from which the process is spawned. If not given, the default is to inherit the current working directory.
+
+Use `env` to specify environment variables that will be visible to the new process, the default is `process.env`.
