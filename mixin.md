@@ -20,3 +20,17 @@ class MyClass extends MyMixin(MySuperClass) {
   // class methods here, go ahead, use super!
 }
 ```
+wrap
+```js
+const _wrappedMixin = '__mixwith_wrappedMixin';
+
+  const wrap = exports.wrap = (mixin, wrapper) => {
+    Object.setPrototypeOf(wrapper, mixin);
+    if (!mixin[_wrappedMixin]) {
+      mixin[_wrappedMixin] = mixin;
+    }
+    return wrapper;
+  };
+
+  const unwrap = exports.unwrap = wrapper => wrapper[_wrappedMixin] || wrapper;
+```
