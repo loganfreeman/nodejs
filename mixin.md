@@ -31,6 +31,5 @@ const _wrappedMixin = '__mixwith_wrappedMixin';
     }
     return wrapper;
   };
-
-  const unwrap = exports.unwrap = wrapper => wrapper[_wrappedMixin] || wrapper;
+const unwrap = exports.unwrap = wrapper => wrapper[_wrappedMixin] || wrapper;
 ```
