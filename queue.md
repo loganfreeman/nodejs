@@ -5,3 +5,4 @@ Job queue
 Redis
 ---
 - [node-redis-sentinel](https://github.com/ortoo/node-redis-sentinel)
+- [ioredis](https://github.com/luin/ioredis)
