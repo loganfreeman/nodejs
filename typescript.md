@@ -1,0 +1,1 @@
+- [Awesome TypeScript loader for webpack](https://github.com/s-panferov/awesome-typescript-loader)
