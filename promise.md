@@ -1,0 +1,1 @@
+- [motivation-bot](https://github.com/botpress/botpress-examples/tree/master/motivation-bot)
