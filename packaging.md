@@ -12,3 +12,8 @@ Webpack
 ---
 - [webpack-howto](https://github.com/petehunt/webpack-howto)
 - [webpack cookbook](http://survivejs.com/webpack/developing-with-webpack/getting-started/)
+
+package manager
+---
+- [lerna](https://github.com/lerna/lerna)
+- [rollup](https://github.com/rollup/rollup)
