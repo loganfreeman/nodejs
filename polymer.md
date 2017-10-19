@@ -1,1 +1,2 @@
 - [CLI project types](https://www.polymer-project.org/2.0/docs/tools/polymer-cli)
+- [polymer-starter-kit](https://github.com/PolymerElements/polymer-starter-kit)
